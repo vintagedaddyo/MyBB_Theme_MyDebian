@@ -700,6 +700,7 @@ a.button {
   display: none;
   z-index: 999;
   background: #D5004B url('themes/mydebian/sc_arrow.png') center no-repeat;
+  border-radius: 3px;
 }
 
 #scroll_up {
@@ -865,9 +866,12 @@ a:hover, a:active {
 }
 
 #panel .upper {
-	background: #FFF8FA;
+/*	background: #FFF8FA;
 	color: #000;
-    border-top: 2px solid #850000;
+    border-top: 2px solid #850000;	*/
+	background: #EEEEEE;
+	color: #000;
+    border-top: 2px solid #DDDDDD;
 	padding: 7px;
 	clear: both;
 }
@@ -880,9 +884,12 @@ a:hover, a:active {
 }
 
 #panel .lower {
-	background: #FFF8FA;
+/*	background: #FFF8FA;
 	color: #000;
-    border-bottom: 2px solid #850000;
+    border-bottom: 2px solid #850000;	*/
+	background: #EEEEEE;
+	color: #000;
+    border-bottom: 2px solid #DDDDDD;
 	padding: 5px;
 }
 
@@ -943,9 +950,12 @@ a:hover, a:active {
 #footer .upper {
 	font-size: 12px;
 	overflow: hidden;
-	background: #FFF8FA;
+	background: #EEEEEE;
+    border-top: 2px solid #DDDDDD;
+    border-bottom: 2px solid #DDDDDD;	
+/*	background: #FFF8FA;
     border-top: 2px solid #850000;
-    border-bottom: 2px solid #850000;
+    border-bottom: 2px solid #850000;*/
 	color: #000000;
 	padding: 10px;
 }
@@ -2655,7 +2665,7 @@ div.jqi .jqisubstate .jqibuttons button {
 				{$awaitingusers}
 				<navigation>
 				<br />]]></template>
-		<template name="headerinclude" version="1829"><![CDATA[<link rel="alternate" type="application/rss+xml" title="{$lang->latest_threads} (RSS 2.0)" href="{$mybb->settings['bburl']}/syndication.php" />
+		<template name="headerinclude" version="1830"><![CDATA[<link rel="alternate" type="application/rss+xml" title="{$lang->latest_threads} (RSS 2.0)" href="{$mybb->settings['bburl']}/syndication.php" />
 <link rel="alternate" type="application/atom+xml" title="{$lang->latest_threads} (Atom 1.0)" href="{$mybb->settings['bburl']}/syndication.php?type=atom1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset={$charset}" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
